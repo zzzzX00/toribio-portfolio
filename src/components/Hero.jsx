@@ -1,5 +1,5 @@
 import React from 'react';
-import './Hero.css';
+import './hero.css';
 import defaultPhoto from '../assets/allana.jpg'; 
 import Navbar from './Navbar';
 
