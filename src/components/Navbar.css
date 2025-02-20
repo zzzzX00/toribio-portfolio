@@ -1,7 +1,7 @@
 .navbar {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 2rem 6rem;
-    position: fixed;
+    position: sticky;
     box-sizing: border-box;
     width: 100%;
     top: 0;
@@ -13,13 +13,14 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     height: 80px;
-    margin-bottom: 80px;
 }
 
 .navbar.scrolled {
-    background-color: #0d0d0d;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    background-color: rgba(13, 13, 13, 0.95); /* Slight transparency */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease-in-out;
 }
+
 
 /* Logo Styling */
 .navbar-logo {
@@ -28,11 +29,12 @@
     font-weight: bold;
     text-decoration: none;
     letter-spacing: 1px;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .navbar-logo:hover {
-    color: #833b83; /* Change color on hover */
+    color: #833b83;
+    transform: scale(1.1); /* Makes it pop */
 }
 
 /* Navbar Links Styling */
@@ -52,7 +54,7 @@
 .navbar-links a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.3rem; /* Adjusted for better readability */
+    font-size: 1.3rem;
     font-weight: 500;
     transition: color 0.3s ease;
 }

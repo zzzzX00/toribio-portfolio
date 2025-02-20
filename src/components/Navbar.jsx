@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link} from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -6,7 +7,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            setScrolled(window.scrollY > 50); // Change navbar style after 50px scroll
+            setScrolled(window.scrollY > 50); 
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -15,11 +16,12 @@ const Navbar = () => {
 
     return (
         <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-            <a href="#home" className="navbar-logo">AT</a>
+            <Link to="/" className="navbar-logo">AT</Link>
             <ul className="navbar-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><Link to="/" className={({ isActive }) => isActive ? "active-link" : ""}>Home</Link></li>
+                <li><Link to="/about-me" className={({ isActive }) => isActive ? "active-link" : ""}>About</Link></li>
+                <li><Link to="/projects" className={({ isActive }) => isActive ? "active-link" : ""}>Projects</Link></li>
+                <li><Link to="/contact" className={({ isActive }) => isActive ? "active-link" : ""}>Contact</Link></li>
             </ul>
         </nav>
     );

@@ -1,17 +1,15 @@
 import React from 'react';
-import './Hero.css';
-import defaultPhoto from '../assets/allana.jpg'; // Fallback image in case no photo is passed
-import Navbar from './Navbar'; // Importing the Navbar component
+import './hero.css';
+import defaultPhoto from '../assets/allana.jpg'; 
+import Navbar from './Navbar';
 
 const Hero = ({ name = 'Allana Shenelle Toribio', tagline = 'Web Developer', photo = defaultPhoto }) => {
   const handleAboutClick = () => {
-    // Scroll to the "About" section or trigger any desired action
     window.location.href = '#about';
   };
 
   return (
     <section id="home">
-      {/* Navbar Component */}
       <Navbar />
 
       {/* Hero Section */}
