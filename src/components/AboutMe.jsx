@@ -34,7 +34,7 @@ const AboutMe = () => {
           >
             About <span>Me</span>
           </motion.h1>
-          <h3>Web Developer | Over Thinker</h3>
+          <h3>Web Developer | Overthinker</h3>
           <p>
             Hi! I'm <strong>Shane</strong>, a <strong>21-year-old</strong> BSIT student at 
             <strong> Western Mindanao State University</strong>. I love connecting with people who value relationships and enjoy deep 
