@@ -5,23 +5,27 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 15px 5%;
+    padding: 8px 4%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
     transition: background 0.3s ease-in-out;
     background: transparent;
+    height: 50px;
 }
 
 .navbar.scrolled {
     background: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(10px);
+    padding: 6px 4%;
+    height: 48px;
 }
 
 /* Navbar Container */
 .navbar-container {
     width: 100%;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,8 +33,8 @@
 
 /* Left-Side Logo */
 .navbar-logo {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 1.8rem;
+    font-weight: 600;
     color: #d161c2;
     text-decoration: none;
 }
@@ -38,16 +42,16 @@
 /* Right-Side Navigation Links */
 .navbar-links {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     list-style: none;
 }
 
 .navbar-links a {
     text-decoration: none;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, font-size 0.2s ease;
 }
 
 .navbar-links a:hover {
@@ -63,13 +67,32 @@
 /* Responsive Menu (Mobile) */
 .menu-icon {
     display: none;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: white;
     cursor: pointer;
 }
 
 /* Mobile Styles */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 12px 4%;
+    }
+
+    .navbar-links {
+        gap: 20px;
+    }
+
+    .navbar-links a {
+        font-size: 1.1rem;
+    }
+}
+
 @media (max-width: 768px) {
+    .navbar {
+        padding: 6px 3%;
+        height: 45px;
+    }
+
     .menu-icon {
         display: block;
     }
@@ -77,14 +100,15 @@
     .navbar-links {
         display: none;
         flex-direction: column;
-        background: rgba(0, 0, 0, 0.9);
+        background: rgba(0, 0, 0, 0.95);
         position: absolute;
-        top: 60px;
+        top: 50px;
         right: 5%;
-        width: 200px;
-        padding: 15px;
-        border-radius: 10px;
+        width: 110px;
+        padding: 10px;
+        border-radius: 8px;
         text-align: center;
+        transition: all 0.3s ease-in-out;
     }
 
     .navbar-links.active {
@@ -92,6 +116,33 @@
     }
 
     .navbar-links li {
-        padding: 10px 0;
+        padding: 6px 0;
+    }
+
+    .navbar-links a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px 3%;
+        height: 42px;
+    }
+
+    .navbar-logo {
+        font-size: 1.5rem;
+    }
+
+    .menu-icon {
+        font-size: 1.5rem;
+    }
+
+    .navbar-links {
+        width: 160px;
+    }
+
+    .navbar-links a {
+        font-size: 0.85rem;
     }
 }
