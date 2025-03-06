@@ -129,10 +129,9 @@
 @media (max-width: 768px) {
   .about-me {
     height: auto;
-    padding: 5%;
 }
   .about-container {
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
     gap: 20px;
   }
@@ -147,10 +146,13 @@
 }
 
 @media (max-width: 600px) {
+  .about-me {
+    height: auto;
+}
   .about-container {
     flex-direction: column;
     text-align: center;
-    gap: 3+20px;
+    gap: 30px;
   }
 
   .about-content {
