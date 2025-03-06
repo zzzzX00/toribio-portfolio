@@ -1,39 +1,55 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./AboutMe.css";
+import profilePic from '../assets/allana.jpg'; 
+import Navbar from './Navbar';
 
 const AboutMe = () => {
   return (
     <section className="about-me">
-      <div className="container">
-        <h1>About Me</h1>
-        <p>
-          Hi! I'm <strong>Shane</strong>, a <strong>21-year-old</strong> 
-          <strong> BSIT student</strong> at <strong>Western Mindanao State University</strong>.  
-        </p>
-        <p>
-          I love <strong>bonding with people who respect and value relationships</strong>, and I 
-          truly enjoy being accompanied by those I feel comfortable with. I grew up 
-          with my <strong>lola</strong>, surrounded by <strong>family and friends</strong> who taught me the 
-          importance of <strong>kindness, resilience, and hard work</strong>.
-        </p>
-        <p>
-          My passion for <strong>technology and creativity</strong> led me to pursue a career in 
-          <strong> Software Development</strong>. I find joy (but right now not yet hehe) in <strong>solving problems, 
-          designing user-friendly interfaces, and creating seamless digital experiences</strong>.
-        </p>
-        <p>
-          Beyond academics, I love exploring new skills to expand my knowledge and 
-          stay up to date with industry trends.
-        </p>
-        <p>
-          In my free time, you’ll find me either hanging around, or simply 
-          enjoying deep conversations with people who inspire me. I believe that 
-        growth happens through connections, experiences, and a continuous pursuit of knowledge.
-        </p>
-        <p>
-          My goal is to become a <strong>Senior Developer</strong>, contributing to <strong>innovative and 
-          impactful projects</strong> while constantly learning and improving.
-        </p>
+      <Navbar />
+
+      <div className="about-container">
+        {/* Left - Image Section */}
+        <motion.div
+        className="about-image"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <img src={profilePic} alt="Shane's Profile" />
+        </motion.div>
+
+        {/* Right - Text Section */}
+        <motion.div
+          className="about-content"
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
+          <motion.h1
+            initial={{ y: -20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            About <span>Me</span>
+          </motion.h1>
+          <h3>Web Developer | Over Thinker</h3>
+          <p>
+            Hi! I'm <strong>Shane</strong>, a <strong>21-year-old</strong> BSIT student at 
+            <strong> Western Mindanao State University</strong>. I love connecting with people who value relationships and enjoy deep 
+            conversations that inspire growth and learning. Passionate about <strong>technology and creativity</strong>, With a strong foundation
+            in web development, I aim to create seamless, responsive designs.
+          </p>
+          <motion.a
+            href="#contact"
+            className="cta-button"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Contact Me
+          </motion.a>
+        </motion.div>
       </div>
     </section>
   );
