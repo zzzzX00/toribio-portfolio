@@ -16,7 +16,7 @@ const Contact = () => {
         {
             id: 2,
             name: "LinkedIn",
-            url: "https://linkedin.com/in/yourprofile",
+            url: "https://www.linkedin.com/in/allana-shenelle-toribio-805721351/",
             icon: <FaLinkedin />
         },
         {
