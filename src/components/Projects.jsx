@@ -9,7 +9,7 @@ const Projects = () => {
             title: "Pokemon Explorer",
             description: "An interactive Pokemon application built with React and Vite that leverages the PokeAPI to display detailed information about Pokemon. Features include searching, filtering, and viewing comprehensive stats for each Pokemon.",
             githubLink: "https://github.com/BoushraAlkie/pokemon",
-            demoLink: "https://.netlify.app/",
+            demoLink: "https://pokemon-allana-boushra.netlify.app/",
             thumbnail: "/react (1).jpeg"
         },
         {
