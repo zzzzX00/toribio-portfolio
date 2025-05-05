@@ -1,0 +1,125 @@
+.experience-container {
+    padding: 80px 5%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.experience-title {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.experience-subtitle {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.experience-card {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 25px;
+    position: relative;
+    border-left: 3px solid #d161c2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.experience-role {
+    font-size: 1.4rem;
+    color: #fff;
+    margin: 0;
+}
+
+.experience-duration {
+    font-size: 0.9rem;
+    color: #d161c2;
+    font-weight: 500;
+}
+
+.experience-company {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin: 0 0 15px 0;
+}
+
+.experience-description {
+    font-size: 0.95rem;
+    color: #bbb;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.experience-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background: rgba(209, 97, 194, 0.15);
+    color: #d161c2;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .experience-container {
+        padding: 60px 4%;
+    }
+    
+    .experience-title {
+        font-size: 2rem;
+    }
+    
+    .experience-card {
+        padding: 20px;
+    }
+    
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .experience-role {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-container {
+        padding: 50px 3%;
+    }
+    
+    .experience-title {
+        font-size: 1.8rem;
+    }
+    
+    .experience-card {
+        padding: 15px;
+    }
+}
