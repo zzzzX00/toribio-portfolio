@@ -8,16 +8,16 @@ const Projects = () => {
             id: 1,
             title: "Pokemon Explorer",
             description: "An interactive Pokemon application built with React and Vite that leverages the PokeAPI to display detailed information about Pokemon. Features include searching, filtering, and viewing comprehensive stats for each Pokemon.",
-            githubLink: "https://github.com/username/pokemon-explorer",
-            demoLink: "https://pokemon-explorer-demo.netlify.app",
+            githubLink: "https://github.com/BoushraAlkie/pokemon",
+            demoLink: "https://.netlify.app/",
             thumbnail: "/react (1).jpeg"
         },
         {
             id: 2,
             title: "Todo List Application",
             description: "A responsive Todo List application developed with React and Vite that helps users organize their tasks efficiently. Features include adding, editing, and deleting tasks, marking tasks as complete, and filtering tasks by status.",
-            githubLink: "https://github.com/username/todo-list-app",
-            demoLink: "https://todo-list-app-demo.netlify.app",
+            githubLink: "https://github.com/BoushraAlkie/todolist",
+            demoLink: "https://todolist-allana-boushra.netlify.app/",
             thumbnail: "/react (2).jpeg"
         },
         {
