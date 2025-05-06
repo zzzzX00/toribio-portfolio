@@ -52,7 +52,7 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.8 }}
           >
-            <a href="#portfolio" className="cta-button">My Portfolio</a>
+            {/* <a href="#portfolio" className="cta-button">My Portfolio</a> */}
           </motion.div>
         </motion.div>
 
