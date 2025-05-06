@@ -34,8 +34,10 @@ const Navbar = () => {
                     <li><Link to="/about-me" className={location.pathname === '/about-me' ? 'active-link' : ''} onClick={() => setMenuOpen(false)}>About</Link></li>
                     <li><Link to="/projects" className={location.pathname === '/projects' ? 'active-link' : ''} onClick={() => setMenuOpen(false)}>Projects</Link></li>
                     <li><Link to="/experience" className={location.pathname === '/experience' ? 'active-link' : ''} onClick={() => setMenuOpen(false)}>Experience</Link></li>
+                    <li><Link to="/certificates" className={location.pathname === '/certificates' ? 'active-link' : ''} onClick={() => setMenuOpen(false)}>Certificates</Link></li>
                     <li><Link to="/blog" className={location.pathname === '/blog' || location.pathname.startsWith('/blog/') ? 'active-link' : ''} onClick={() => setMenuOpen(false)}>Blog</Link></li>
                     <li><Link to="/contact" className={location.pathname === '/contact' ? 'active-link' : ''} onClick={() => setMenuOpen(false)}>Contact</Link></li>
+                    
                 </ul>
             </div>
         </nav>
